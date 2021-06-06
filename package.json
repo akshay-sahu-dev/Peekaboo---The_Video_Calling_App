@@ -1,0 +1,26 @@
+{
+  "name": "peekaboo",
+  "version": "1.0.0",
+  "description": "Peekaboo is a video calling/chatting app where a user can connect to his or her friends using this amazing platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshay-sahu-au13/Peekaboo---The_Video_Calling_App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshay-sahu-au13/Peekaboo---The_Video_Calling_App/issues"
+  },
+  "homepage": "https://github.com/akshay-sahu-au13/Peekaboo---The_Video_Calling_App#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2",
+    "uuid": "^8.3.2"
+  }
+}
