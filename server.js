@@ -23,8 +23,10 @@ io.on('connection', (socket)=> {
     socket.on('join-room', (roomId, userId)=>{
         console.log(roomId, userId);
         socket.join(roomId)
-        const brd = socket.to(roomId).emit('user-connected', userId);
-        // console.log("Broadcast: ", brd)
+        socket.to(roomId).emit('user-connected', userId);
+        socket.on('disconnect', ()=>{
+            socket.to(roomId).emit('user-disconnected', userId)
+        })
     })
 })
 
